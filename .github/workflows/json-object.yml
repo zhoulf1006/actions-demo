@@ -1,3 +1,5 @@
+# Example returning a JSON object
+# This workflow sets a JSON matrix in one job, and passes it to the next job using an output and fromJSON.
 name: json-object
 on: push
 jobs:

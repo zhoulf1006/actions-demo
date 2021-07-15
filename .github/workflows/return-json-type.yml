@@ -1,5 +1,6 @@
 # Example returning a JSON data type
 # This workflow uses fromJSON to convert environment variables from a string to a Boolean or integer.
+name: return-json-type
 on: push
 env: 
   continue: true

@@ -12,18 +12,18 @@ jobs:
   job2:
     runs-on: ubuntu-latest
     steps:
-    - name: Set the value
-      id: step_one
-      run: |
-        echo "action_state=yellow" >> $GITHUB_ENV
-    - name: Use the value
-      id: step_two
-      run: |
-        echo "${{ env.action_state }}" # This will output 'yellow'
+      - name: Set the value
+        id: step_one
+        run: |
+          echo "action_state=yellow" >> $GITHUB_ENV
+      - name: Use the value
+        id: step_two
+        run: |
+          echo "${{ env.action_state }}" # This will output 'yellow'
   job3:
     runs-on: ubuntu-latest
     steps:
-    -name: add a system path
-    id: add-sys-path
-    run: |
-      echo "$HOME/.local/bin" >> $GITHUB_PATH
+      - name: add a system path
+        id: add-sys-path
+        run: |
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
